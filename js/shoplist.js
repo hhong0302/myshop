@@ -5,38 +5,37 @@ fetch('data/shoplist.json')
    let li = '';
        for(let i = 0 ; i < rs.length ; i++)
        {
-           li += '<div class="col-lg-3 my-5">'+
-           '<a href="./main.html">'+
-           '<div class="card">'+
-               '<img src="'+rs[i].img+'" class="img-fluid" alt="033">'+
-               '<div class="card-body">'+
-                   '<ul class="pd-list">'+
-                       '<li>';
-                           
+           li += `<div class="col-lg-3 my-5">
+           <a href="javascript:void(0)">
+           <div class="card">
+               <img src="${rs[i].img}" class="img-fluid" alt="033">
+               <div class="card-body">
+                   <ul class="pd-list">
+                       <li>`;
                            for(let j = 0 ; j < rs[i].color.length ; j++)
                            {
                                li+=`<span class=${rs[i].color[j]}></span>`;
                            }
-                       li+='</li>'+
-                       '<li class="pd-title">'+
-                           '<h1>'+rs[i].title+'</h1>'+
-                       '</li>'+
-                       '<li>'+
-                           '<del>'+rs[i].delprice+'</del><br>'+
-                           '<strong>'+rs[i].saleprice+'</strong>'+
-                       '</li>'+
-                       '<li>'+
-                           '<p>'+rs[i].content+'</p>'+
-                       '</li>'+
-                       '<li class="last">'+
-                           '<span>'+rs[i].news[0]+'</span>'+
-                           '<span>'+rs[i].news[1]+'</span>'+
-                       '</li>'+
-                   '</ul>'+
-               '</div>'+
-            '</div>'+
-            '</a>'+
-       '</div>'
+                       li+=`</li>
+                       <li class="pd-title">
+                           <h1>${rs[i].title}</h1>
+                       </li>
+                       <li>
+                           <del>${rs[i].delprice}</del><br>
+                           <strong>${rs[i].saleprice}</strong>
+                       </li>
+                       <li>
+                           <p>${rs[i].content}</p>
+                       </li>
+                       <li class="last">
+                           <span>${rs[i].news[0]}</span>
+                           <span>${rs[i].news[1]}</span>
+                       </li>
+                   </ul>
+               </div>
+            </div>
+            </a>
+       </div>`;
        }
        document.getElementById('row').innerHTML = li;
    })
