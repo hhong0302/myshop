@@ -64,7 +64,14 @@
     }
 
     
+    
 }());
+
+
+function viewQuick()
+    {
+        document.getElementsByClassName('quick')[0].classList.toggle('action');
+    }
 
 
 //bestlink
