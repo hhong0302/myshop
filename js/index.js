@@ -3,12 +3,11 @@
     const listAll = document.getElementsByClassName('list-all')[0];
     const cart = document.getElementById('cart');
     const close = document.getElementById('close');
+    const simg = document.getElementsByClassName('simg');
 
         listAll.addEventListener('click',changeNav);
         cart.addEventListener('click',cartBoxView);
         close.addEventListener('click',cartBoxView);
-        
-        
 
     function changeNav()
     {
@@ -118,6 +117,10 @@ function view(e)
 
     // li[e].classList.add('active');
 }
+
+
+
+
 
 
 /* function product(num,col)

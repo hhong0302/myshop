@@ -6,7 +6,7 @@ fetch('data/shoplist.json')
        for(let i = 0 ; i < rs.length ; i++)
        {
            li += `<div class="col-lg-3 my-5">
-           <a href="javascript:void(0)">
+           <a href="main.html">
            <div class="card">
                <img src="${rs[i].img}" class="img-fluid" alt="033">
                <div class="card-body">

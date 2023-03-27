@@ -20,6 +20,12 @@ body
     margin: 0;
 }
 
+::selection
+{
+    background: #000;
+    color: #fff;
+}
+
 .container
 {
     max-width: 1320px;
@@ -1189,4 +1195,175 @@ ul.quick-btns i
     width: 60px;
     height: 4px;
     background: #555;
+}
+
+/* main.html */
+
+.simgbox
+{
+    margin-left: 10px;
+    width: 120px;
+}
+
+.simgbox img
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.best-rv
+{
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    width: 500px;
+    position: relative;
+}
+
+.rv-star
+{
+    border-right: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    width: 117px;
+}
+
+.rv-star p
+{
+    margin-bottom: 0;
+}
+
+.rv-star p:first-of-type
+{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.rv-pt
+{
+    margin-left: 50px;
+    width: 290px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pt-in
+{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.svbox
+{
+    width:50px;
+    height:50px;
+    display:block;
+    background:#ededed;
+    border:1px solid #ccc;
+    margin-right:10px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right
+{
+    position: absolute;
+    font-size: 30px;
+    color: #ccc;
+    top: 40px;
+    cursor: pointer;
+}
+
+.fa-chevron-left
+{
+    left: 140px;
+}
+
+.fa-chevron-right
+{
+    right: 15px;
+}
+
+.mainproduct
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.mainproduct li
+{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.mainproduct li:last-child
+{
+    padding-bottom: 30px;
+}
+
+.subject
+{
+    padding-bottom: 10px;
+}
+
+.subject span
+{
+    font-size: 12px;
+    color: #c72b35;
+    margin-left: 10px;
+}
+
+.big
+{
+    font-size: 16px;
+    color: #c72b35;
+}
+
+.big label
+{
+    font-weight: 600;
+    margin-right: 40px;
+    display: inline-block;
+    width: 120px;
+}
+
+.big del
+{
+    color: #e8767d;
+}
+
+.salem
+{
+    font-size: 12px;
+    margin-left: 15px;
+    color: #333;
+}
+
+.addProduct
+{
+    list-style-type: none;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.addProduct li.title
+{
+    width: 60%;
+}
+
+.addProduct li#add,
+.addProduct li#totalP
+{
+    width: 17%;
+}
+
+.addProduct li#remove
+{
+    width: 6%;
 }
