@@ -1367,3 +1367,90 @@ ul.quick-btns i
 {
     width: 6%;
 }
+
+
+/* color */
+
+input[type=radio].color
+{
+    display: none;
+}
+label.colors
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+label.colors span
+{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+label.colors.rgray span
+{
+    border-color: gray;
+}
+label.colors.rblack span
+{
+    border-color: black;
+}
+label.colors.purple span
+{
+    border-color: purple;
+}
+label.colors.rorange span
+{
+    border-color: orange;
+}
+label.colors span::after
+{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+}
+input[type=radio]:checked~p
+{
+    font-weight: 700;
+}
+label.colors.rgray input[type=radio]:checked+span::after
+{
+    background: gray;
+}
+label.colors.rblack input[type=radio]:checked+span::after
+{
+    background: black;
+}
+label.colors.purple input[type=radio]:checked+span::after
+{
+    background: purple;
+}
+label.colors.rorange input[type=radio]:checked+span::after
+{
+    background: orange;
+}
+label.colors.rgray span::after{background: rgb(221, 221, 221);}
+label.colors.rblack span::after{background: rgb(71, 71, 71);}
+label.colors.purple span::after{background: rgb(194, 91, 194);}
+label.colors.rorange span::after{background: rgb(248, 205, 126);}
+.colors p
+{
+    margin-top: 35px;
+}
