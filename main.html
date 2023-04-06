@@ -289,7 +289,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <form method="post" class="shopform">
+                <form method="post" name="shopform" class="shopform">
                     <ul class="mainproduct">
                         <li class="subject">
                             <h1>앙상블트위드원피스[55~77size가능]<span>신상10%</span></h1>
@@ -308,13 +308,19 @@
                             <strong>81,900원</strong>
                             <span class="salem"></span>
                         </li>
-                        <li><label>color</label>
+                        <li><label class="labelmr">color</label>
                                 <label class="colors rgray"><input type="radio" class="color" name="color" value="회색" checked><span></span><p>회색</p></label>
                                 <label class="colors rblack"><input type="radio" class="color" name="color" value="검정색"><span></span><p>검정색</p></label>
                                 <label class="colors purple"><input type="radio" class="color" name="color" value="보라색"><span></span><p>보라색</p></label>
                                 <label class="colors rorange"><input type="radio" class="color" name="color" value="주황색"><span></span><p>주황색</p></label>
                         </li>
-                        <li><label>size</label></li>
+                        <li>
+                            <label class="labelmr">size</label>
+                            <label class="sizes s"><input type="radio" class="size" name="size" value="small" checked><span></span><p>S</p></label>
+                            <label class="sizes m"><input type="radio" class="size" name="size" value="medium"><span></span><p>M</p></label>
+                            <label class="sizes l"><input type="radio" class="size" name="size" value="large"><span></span><p>L</p></label>
+                            <label class="sizes x"><input type="radio" class="size" name="size" value="xlarge"><span></span><p>XL</p></label>
+                        </li>
                     </ul>
                     <ul class="addProduct">
                         <li class="title">
@@ -322,19 +328,30 @@
                             <p class="option">옵션</p>
                         </li>
                         <li id="add">
-                            1
+                           <div class="addbox">
+                               <span class="ctv">1</span>
+                               <div class="pmbox">
+                                 <div class="up" onclick="updown(0,1)"><i class="fa-solid fa-angle-up"></i></div>
+                                 <div class="down" onclick="updown(0,-1)"><i class="fa-solid fa-angle-down"></i></div>
+                               </div>
+                           </div>
+                           <input type="hidden" name="ct[]" class="ct" value="1">
                         </li>
+
                         <li id="remove">
-                            2
-                        </li>
+                            2  
+                        </li> 
                         <li id="totalP">
                             3
                         </li>
-                    </ul>
+                    </ul>   
                     <div class="total">
                         <label>총상품금액<span>(수량)</span></label>
                         <div>0<span>(0개)</span></div>
                     </div>
+                    <input type="hidden" name="price" id="price" value="81900">
+                    <input type="hidden" name="title" id="title" value="앙상블트위드원피스">
+                    <input type="hidden" name="totalprice" id="totalprice">
                 </form>
             </div>
         </div>

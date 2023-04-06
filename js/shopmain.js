@@ -4,6 +4,7 @@
     const cart = document.getElementById('cart');
     const close = document.getElementById('close');
     const simg = document.getElementsByClassName('simg');
+    const size = document.shopform.size;
 
         listAll.addEventListener('click',changeNav);
         cart.addEventListener('click',cartBoxView);
@@ -18,6 +19,21 @@
                 document.getElementById('bimg').setAttribute("src" , "images/09"+i+".jpg");
             });
         }
+
+        //본문 주문 폼
+        size.forEach(e => {
+            e.addEventListener('change',function(e)
+            {
+                const selectTitle = document.getElementById('title').value;
+                const selectPrice = document.getElementById('price').value;
+                const selectColor = document.querySelector('.color:checked').value;
+                const selectsize = document.querySelector('.size:checked').value;
+                console.log(selectTitle,selectPrice,selectColor,selectsize);
+            });
+        });
+
+        //
+        
        
         
 
@@ -106,3 +122,23 @@ function view(e)
     // li[e].classList.add('active');
 }
 
+function updown(i,n)
+        {
+            var ct =parseInt(document.getElementsByClassName('ct')[i].value);
+            if(n>0)
+            {
+                if(ct<=11)
+                {
+                    ct++;
+                }
+            }
+            else
+            {
+                if(ct>1)
+                {
+                    ct--;
+                }
+            }
+            document.getElementsByClassName('ctv')[i].innerHTML=ct;
+            document.getElementsByClassName('ct')[i].value=ct;
+        }
