@@ -123,22 +123,22 @@ function view(e)
 }
 
 function updown(i,n)
+{
+    var ct =parseInt(document.getElementsByClassName('ct')[i].value);
+    if(n>0)
+    {
+        if(ct<=11)
         {
-            var ct =parseInt(document.getElementsByClassName('ct')[i].value);
-            if(n>0)
-            {
-                if(ct<=11)
-                {
-                    ct++;
-                }
-            }
-            else
-            {
-                if(ct>1)
-                {
-                    ct--;
-                }
-            }
-            document.getElementsByClassName('ctv')[i].innerHTML=ct;
-            document.getElementsByClassName('ct')[i].value=ct;
+            ct++;
         }
+    }
+    else
+    {
+        if(ct>1)
+        {
+            ct--;
+        }
+    }
+    document.getElementsByClassName('ctv')[i].innerHTML=ct;
+    document.getElementsByClassName('ct')[i].value=ct;
+}
