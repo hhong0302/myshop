@@ -6,6 +6,7 @@
     const simg = document.getElementsByClassName('simg');
     const size = document.shopform.size;
     const rootColor = document.getElementsByClassName('color');
+    const form = document.getElementsByClassName('shopform')[0];
 
         listAll.addEventListener('click',changeNav);
         cart.addEventListener('click',cartBoxView);
@@ -232,7 +233,7 @@ function updown(i,n)
         }
     }
     summoney = money*ct;
-    document.getElementById('summoney'+i).value = money;
+    document.getElementById('summoney'+i).value = summoney;
     document.getElementById('totalIP'+i).innerHTML = numComma(summoney)+"원";
     document.getElementById('ctv'+i).innerHTML=ct;
     document.getElementById('ct'+i).value=ct;
