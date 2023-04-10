@@ -316,35 +316,16 @@
                         </li>
                         <li>
                             <label class="labelmr">size</label>
-                            <label class="sizes s"><input type="radio" class="size" name="size" value="small" checked><span></span><p>S</p></label>
+                            <label class="sizes s"><input type="radio" class="size" name="size" value="small"><span></span><p>S</p></label>
                             <label class="sizes m"><input type="radio" class="size" name="size" value="medium"><span></span><p>M</p></label>
                             <label class="sizes l"><input type="radio" class="size" name="size" value="large"><span></span><p>L</p></label>
                             <label class="sizes x"><input type="radio" class="size" name="size" value="xlarge"><span></span><p>XL</p></label>
                         </li>
                     </ul>
-                    <ul class="addProduct">
-                        <li class="title">
-                            <p>제목</p>
-                            <p class="option">옵션</p>
-                        </li>
-                        <li id="add">
-                           <div class="addbox">
-                               <span class="ctv">1</span>
-                               <div class="pmbox">
-                                 <div class="up" onclick="updown(0,1)"><i class="fa-solid fa-angle-up"></i></div>
-                                 <div class="down" onclick="updown(0,-1)"><i class="fa-solid fa-angle-down"></i></div>
-                               </div>
-                           </div>
-                           <input type="hidden" name="ct[]" class="ct" value="1">
-                        </li>
 
-                        <li id="remove">
-                            2  
-                        </li> 
-                        <li id="totalP">
-                            3
-                        </li>
-                    </ul>   
+                    <div id="addProduct"></div>
+
+                     
                     <div class="total">
                         <label>총상품금액<span>(수량)</span></label>
                         <div>0<span>(0개)</span></div>

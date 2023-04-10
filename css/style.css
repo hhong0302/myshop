@@ -1428,21 +1428,13 @@ label.colors span
     left: 50%;
     transform: translateX(-50%);
 }
-label.colors.rgray span
+label.colors span
 {
-    border-color: gray;
+    border-color: #ddd;
 }
-label.colors.rblack span
+label.colors input[type=radio]:checked+span
 {
-    border-color: black;
-}
-label.colors.purple span
-{
-    border-color: purple;
-}
-label.colors.rorange span
-{
-    border-color: orange;
+    border-color: #333;
 }
 label.colors span::after
 {
@@ -1546,4 +1538,25 @@ li#add
 .pmbox>div>i
 {
     line-height: 0.5;
+}
+
+.listclose
+{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.listclose i
+{
+    font-size: 18px;
+    color: #999;
+}
+
+.totalP
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 800;
+    font-size: 15px;
 }
